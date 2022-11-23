@@ -22,9 +22,9 @@ knitr::opts_chunk$set(
 [![Test coverage](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
-The goal of 'bis620.2022' is to create a accelerometry graphic for a dataset with time and three-dimensional coordinates. In addition, it has a feature for creating spectral signature plots. The plot function creates an acceleration plot using a dataframe with either a frequency column or a time column and X, Y, and Z variables. The spectral function conducts quick discrete Fourier analysis on a dataframe.
+The goal of `bis620.2022` is to create a accelerometry graphic for a dataset with time and three-dimensional coordinates. In addition, it has a feature for creating spectral signature plots. The plot function creates an acceleration plot using a dataframe with either a frequency column or a time column and X, Y, and Z variables. The spectral function conducts quick discrete Fourier analysis on a dataframe.
 
-The dataset 'ukb_accel' from UKBiobank is part of the package and is available for use in examples as seen here below in the example section.
+The dataset `ukb_accel` from UKBiobank is part of the package and is available for use in examples as seen here below in the example section.
 
 ### Badge overview
 
