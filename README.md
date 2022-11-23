@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Codecov test
-coverage](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badge.svg)](https://app.codecov.io/gh/celestinebj23/bis620.2022?branch=main)
+coverage](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badge.svg)](https://app.codecov.io/gh/celestinebj23/bis620.2022)
 [![R-CMD-check](https://github.com/celestinebj23/bis620.2022/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
