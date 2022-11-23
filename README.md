@@ -13,9 +13,9 @@ coverage](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-co
 <!-- badges: end -->
 
 The goal of `bis620.2022` is to create a accelerometry graphic. The
-graphic uses a dataset with time and three-dimensional coordinates. In
-addition, it has a feature for creating spectral signature plots. The
-plot function creates an accelerogram using a data frame with a
+graphic uses a dataset with time and three-dimensional coordinates.
+Futhermore, it has a feature for creating spectral signature plots. The
+plot function creates an accelerogram graphic using a data frame with a
 frequency column or time column and X, Y and Z variables. The spectrum
 function performs a fast discrete Fourier analysis of the data frame.
 
