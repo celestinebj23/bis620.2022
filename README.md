@@ -12,15 +12,14 @@ coverage](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-co
 [![Codecov](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badge.svg)](https://codecov.io/gh/celestinebj23/bis620.2022)
 <!-- badges: end -->
 
-The goal of `bis620.2022` is to create a accelerometry graphic for a
-dataset with time and three-dimensional coordinates. In addition, it has
-a feature for creating spectral signature plots. The plot function
-creates an acceleration plot using a dataframe with either a frequency
-column or a time column and X, Y, and Z variables. The spectral function
-conducts quick discrete Fourier analysis on a dataframe.
+The goal of `bis620.2022` is to create a accelerometry graphic. The
+graphic uses a dataset with time and three-dimensional coordinates. In
+addition, it has a feature for creating spectral signature plots. The
+plot function creates an accelerogram using a data frame with a
+frequency column or time column and X, Y and Z variables. The spectrum
+function performs a fast discrete Fourier analysis of the data frame.
 
-The dataset `ukb_accel` from UKBiobank is part of the package and is
-available for use in examples as seen here below in the example section.
+The dataset `ukb_accel` is from UKBiobank and it is part of the package.
 
 ### Badge overview
 
