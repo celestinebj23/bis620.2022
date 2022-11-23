@@ -5,11 +5,11 @@
 
 <!-- badges: start -->
 
-[![Codecov](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badge.svg)](https://codecov.io/gh/celestinebj23/bis620.2022)
 [![R-CMD-check](https://github.com/celestinebj23/bis620.2022/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/R-CMD-check.yaml)
-[![Lint](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
 [![Test
 coverage](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
+[![Lint](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml/badge.svg)](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
+[![Codecov](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badge.svg)](https://codecov.io/gh/celestinebj23/bis620.2022)
 <!-- badges: end -->
 
 The goal of `bis620.2022` is to create a accelerometry graphic for a
