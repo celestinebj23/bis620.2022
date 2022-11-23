@@ -23,7 +23,7 @@ The dataset `ukb_accel` is from UKBiobank and it is part of the package.
 
 ### Badge overview
 
-[Coverage
+[Test Coverage
 page](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
 
 [Lint
@@ -50,7 +50,6 @@ library(bis620.2022)
 data(ukb_accel)
 
 #Use Data
-
 ukb_accel[1:100, ] |>
   spectral_signature(take_log = TRUE) |>
   accel_plot()
