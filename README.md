@@ -14,7 +14,8 @@ The goal of bis620.2022 is to …
 
 ### Badge overview
 
-[Coverage page](https://google.com)
+[Coverage
+page](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
 
 [Lint
 results](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
