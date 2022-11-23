@@ -12,6 +12,13 @@ coverage](https://codecov.io/gh/celestinebj23/bis620.2022/branch/main/graph/badg
 
 The goal of bis620.2022 is to …
 
+### Badge overview
+
+[Coverage page](https://google.com)
+
+[Lint
+results](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
+
 ## Installation
 
 You can install the development version of bis620.2022 from
