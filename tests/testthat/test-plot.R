@@ -7,6 +7,7 @@ test_that(
   }
 )
 
+
 test_that(
   "The accel_plot() errors when no time or freq column.",
   {
