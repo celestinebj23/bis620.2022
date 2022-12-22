@@ -19,14 +19,6 @@ considered.
 
 Refer to the example data `vital` for more details.
 
-### Badge overview
-
-[Test Coverage
-page](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
-
-[Lint
-results](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
-
 ## Installation
 
 You can install the development version of bis620.2022 from

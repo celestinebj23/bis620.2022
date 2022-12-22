@@ -25,12 +25,6 @@ bis620.2022 is a package to examine how would the supplements of Vitamin D or Om
 
 Refer to the example data `vital` for more details.
 
-### Badge overview
-
-[Test Coverage page](https://github.com/celestinebj23/bis620.2022/actions/workflows/test-coverage.yaml)
-
-[Lint results](https://github.com/celestinebj23/bis620.2022/actions/workflows/lint.yaml)
-
 ## Installation
 
 You can install the development version of bis620.2022 from [GitHub](https://github.com/celestinebj23/bis620.2022) with:
