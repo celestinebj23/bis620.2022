@@ -16,50 +16,39 @@ knitr::opts_chunk$set(
 )
 ```
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+## Team
+Baijia Xu(bx69)
+Jinxuan Bian(jb3634)
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+## 1. Background
+### The importance of VITAMIN D
+Although data from laboratory studies, epidemiologic studies, and small clinical trials strongly suggest that vitamin D has a cancer-protective effect, there are no completed or ongoing large randomized trials of high-dose vitamin D supplements for the primary prevention of cancer in a general population. More observational studies, as well as randomized trials if possible, would be beneficial in testing the hypothesis that vitamin D reduces cancer risk. Confirming that vitamin D lowers the risk of cancer incidence or mortality is critical because current health recommendations do not encourage high vitamin D intakes and discourage sun exposure.
 
-## Vignette Info
+Current dietary recommendations are only intended to prevent dangerously low vitamin D levels. To maintain bone health and normal calcium metabolism, the Institute of Medicine recommends 400 IU/d of vitamin D for adults aged 51-70 and 600 IU/d for adults over 70. If the link between better vitamin D status and lower cancer risk is causal, the current levels of intake are likely insufficient.
 
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+Vitamin D for cancer prevention remains a challenge, but more research should be prioritized because the potential benefits are substantial. The data on the relationship between vitamin D and CVD is less extensive, but it does support a possible protective effect. It is thus concerning that more than half of the middle-aged and older women in the United States and more than one-third of similarly aged men are vitamin D deficient. Vitamin D for cancer prevention remains a challenge, but more research should be prioritized because the potential benefits are substantial. The data on the relationship between vitamin D and CVD is less extensive, but it does support a possible protective effect. It is thus concerning that more than half of the middle-aged and older women in the United States and more than one-third of similarly aged men are vitamin D deficient. African-American (black) people are especially vulnerable because their skin is less able to synthesize vitamin D in response to solar radiation and they have lower dietary and supplemental vitamin D intakes than whites. Obese people are also at higher risk, owing to decreased bioavailability of this fat-soluble vitamin. Given the aging population and the rising prevalence of obesity. Low vitamin D status is becoming an increasingly serious public health concern.
 
-## Styles
+### The importance of OMEGA-3
+In laboratory and observational studies, marine omega-3 fatty acids have shown significant promise for the primary prevention of CVD; large randomized trials in secondary prevention or high-risk settings have also found benefits. There are, however, no completed or ongoing trials of such supplements for the primary prevention of CVD in a general population selected solely on the basis of age and not on vascular risk factors such as diabetes. According to the American Heart Association's Nutrition Committee, "more studies are needed to confirm and further define the health benefits of omega-3 fatty acid supplements for primary prevention." The conclusion from a 2004 workshop of the ODS and the National Heart, Lung and Blood Institute (NHLBI) Working Group on Future Clinical Research Directions on Omega-3 Fatty Acids and CVD is that "The body of evidence is consistent with the hypothesis that intake of omega-3 fatty acids reduces CVD but a definitive trial is needed".
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+The VITAL Trial will look at the role of vitamin D and long-chain marine omega-3 polyunsaturated fatty acid supplements (eicosapentaenoic acid [EPA] plus docosahexaenoic acid [DHA]) in cancer and cardiovascular disease prevention (CVD).
 
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
 
-## Figures
+## 2. Motivation
+According to the CDC statistics, one person dies every 34 seconds in the United States from cardiovascular disease, while cancer is the second leading cause of death nationally. These are ranked as two of the most important health problems facing the nation. Hence some preventions are an important part of the effort to control cancer and cardiovascular disease as both incidences of disease and mortality could be reduced. Vitamin D and Omega-3, which are also referred to as fish oil, are common nutritional supplements that can be accessed in many ways. Some studies suggest that Vitamin D and Omega 3 may prevent or slow cancer or cardiovascular disease development, while some studies oppose that they do not lower the risk for most people. Thus, based on this dataset, we would like to analyze if Vitamin D and Omega-3 do have some impacts on the person-year of different types of cancers and cardiovascular diseases, for which person-year is defined as the estimate of the actual time at risk. 
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+Also, in addition, BMI, which is an estimate of body fat, is a good gauge for the risk of disease that might occur with high body fat in overweight and obese populations. According to research from the American Cancer Society, excess body weight is thought to be responsible for about 11% of cancers in women and about 5% of cancers in men in the United States, as well as about 7% of all cancer deaths. Other diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancers would also be directly affected by excess body fat. At the same time, according to the American Cancer Society, tobacco use remains the leading preventable cause of death in the United States, which is approximately 1 in 5 deaths each year. On average, people who smoke die roughly ten years earlier than those who have never smoked. Cigarette smoking causes 87 percent of lung cancer deaths, which is the highest one. Other than lung cancer, it also causes cancer, heart disease, stroke, lung diseases, diabetes, and chronic obstructive pulmonary disease (COPD), which includes emphysema and chronic bronchitis. Some risk factors for other diseases would also be increased by smoking, such as tuberculosis, certain eye diseases, and problems of the immune system, including rheumatoid arthritis. As BMI and smoking factors are also included in the VITAL dataset, adding to the research question, we would also like to see what roles the BMI and smoking factor would play in the experiment of Vitamin D and Omega-3 with the person-year of different types of cancers and cardiovascular diseases.
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
 
-You can enable figure captions by `fig_caption: yes` in YAML:
+## 3. Scientific research question
+How would the supplements of Vitamin D or Omega-3 affect the person-year of various types of cancers and cardiovascular, for which person-year is defined as the estimate of the actual time at risk? Additionally, how factors such as BMI and smoking would act in the given experimental trials.
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
 
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
+## 4. Data cleaning and exploration
+The dataset we use comes from the website of Project Data Sphere and the ClinicalTrials.gov Identifier of the clinical trial case is NCT01169259.
 
-## More Examples
+There were 25,871 subjects and 81 characteristics in the data set. 25,871 participants are divided into four groups: 1) daily vitamin D and omega-3; (2) daily vitamin D and omega-3 placebo; (3) daily vitamin D placebo and omega-3; or (4) daily vitamin D placebo and omega-3 placebo. To elaborate a little, the variable “vitdactive” is 1 when the subject was fed by vitamin D and “vitactive” is 0 when the subject took vitamin D placebo. Similarly, the variable “fishoilactive” indicates whether the subject took omega-3 or omega-3 placebo.
 
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+The vital dataset contains outcome variables that demonstrate whether each subject developed a specific type of cancer or cardiovascular disease during the years when the trial was conducted, as well as the number of years each subject took to develop this disease. For example, the variable “brca” means whether a subject had breast cancer and the variable “brcayrs” refers to the number of years it took for a subject to develop breast cancer. Similarly, “totmi” indicates whether a subject had myocardial infarction during the years when the trial was conducted and the variable “miyears” shows the years it took for him/her to develop myocardial infarction. ​​We studied a total of eight diseases, including four cancers and four cardiovascular diseases.
 
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
 
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
