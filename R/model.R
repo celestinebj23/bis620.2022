@@ -1,16 +1,17 @@
 
 #' Plot VITAL Data
-#' This function models and plots the relationship between bmi and disease with the effect of smkoing
+#' This function models and plots the relationship between bmi and disease
+#' with the effect of smkoing
 #' @param v a data frame
 #' @param x a particular disease in vital data frame
-#' @return a scatter plot with regression line of a particular disease faceted by four groups.
+#' @return a scatter plot with regression line of a particular disease
+#' faceted by four groups.
 #' @importFrom dplyr select filter group_by
 #' @importFrom ggplot2 aes ggplot geom_histogram facet_grid geom_point geom_smooth geom_line ggtitle
 #' @importFrom ggpubr stat_regline_equation stat_cor
 #' @examples
 #' data(vital)
 #' @export
-#'
 vital_model_smoke <- function(v, x) {
   df <- data.frame(v)
   ## Check that the given dataset is the vital dataset
@@ -21,9 +22,10 @@ vital_model_smoke <- function(v, x) {
   if (x %!in% colnames(vital)) {
     stop(paste0("It is not a disease in the vital dataset."))
   }
+
   if ("brca" %in% x) {
   temp <- df %>% select(brcayrs, bmi, currsmk, vitdactive, fishoilactive) %>%
-    filter(currsmk==1)%>%
+    filter(currsmk==1) %>%
     group_by(vitdactive, fishoilactive)
   p1 <- ggplot(temp, aes(bmi, brcayrs, fill = vitdactive, color = fishoilactive), fig(10,12)) +
     geom_point() +

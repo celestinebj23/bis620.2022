@@ -13,7 +13,8 @@ x \%!in\% y
 \item{v}{a data frame}
 }
 \value{
-a histogram of person years of a particular disease faceted by four groups.
+a histogram of person years of a particular
+disease faceted by four groups.
 }
 \description{
 Plot VITAL Data

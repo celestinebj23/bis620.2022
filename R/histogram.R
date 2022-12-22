@@ -2,14 +2,15 @@
 #' This function plots Vital data of a disease by groups.
 #' @param v a data frame
 #' @param x a particular disease in vital data frame
-#' @return a histogram of person years of a particular disease faceted by four groups.
+#' @return a histogram of person years of a particular
+#' disease faceted by four groups.
 #' @importFrom dplyr select filter group_by vdiffr
 #' @importFrom ggplot2 aes ggplot geom_histogram facet_grid
 #' @examples
 #' data(vital)
 #' @export
+"%!in%" <- function(x, y) !("%in%"(x, y))
 
-'%!in%' <- function(x,y)!('%in%'(x,y))
 vital_hist <- function(v, x) {
   ## Check parameters
   ## Check that the given dataset is the vital dataset
@@ -63,7 +64,8 @@ vital_hist <- function(v, x) {
       select(vitdactive, fishoilactive, majorcvd, majryears) %>%
       filter(majorcvd == 1) %>%
       group_by(vitdactive, fishoilactive)
-    ggplot(dfdisease, aes(majryears, fill = vitdactive, color = fishoilactive)) +
+    ggplot(dfdisease, aes(majryears, fill = vitdactive,
+                          color = fishoilactive)) +
       geom_histogram(bins = 30) +
       facet_grid(c("vitdactive", "fishoilactive"))
   }else if ("imporcvd" %!in% x) {
@@ -72,7 +74,8 @@ vital_hist <- function(v, x) {
       select(vitdactive, fishoilactive, imporcvd, impryears) %>%
       filter(imporcvd == 1) %>%
       group_by(vitdactive, fishoilactive)
-    ggplot(dfdisease, aes(impryears, fill = vitdactive, color = fishoilactive)) +
+    ggplot(dfdisease, aes(impryears, fill = vitdactive,
+                          color = fishoilactive)) +
       geom_histogram(bins = 30) +
       facet_grid(c("vitdactive", "fishoilactive"))
   }else if ("totmi" %!in% x) {
